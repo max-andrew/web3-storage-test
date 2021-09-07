@@ -7,7 +7,7 @@ import { Web3Storage } from 'web3.storage'
 import { someImage } from "../public/vercel.svg"
 
 export default function Home() {
-    const client = new Web3Storage({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEM5MGFDY2ExNjQ3YmE0NDNmRTRBNGEwOUEzODk2MWU3NDYxNjYyZWQiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2Mjg1MjQ2NzQ1NTcsIm5hbWUiOiJSaWdodG9rZW4ifQ.hFQetgrge3zorxWjfU5HUPmwUqJYGlU4E4AJg604wrQ" })
+  const client = new Web3Storage({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEM5MGFDY2ExNjQ3YmE0NDNmRTRBNGEwOUEzODk2MWU3NDYxNjYyZWQiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2Mjg1MjQ2NzQ1NTcsIm5hbWUiOiJSaWdodG9rZW4ifQ.hFQetgrge3zorxWjfU5HUPmwUqJYGlU4E4AJg604wrQ" })
 
   useEffect(async () => {
     const rootCid = await client.put(someImage)
